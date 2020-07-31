@@ -106,6 +106,10 @@ $(".list-group").on("click", "span", function() {
   // swap out elements
   $(this).replaceWith(dateInput);
 
+  dateInput.datepicker({
+    minDate: 1
+  })
+
   dateInput.trigger("focus");
 });
 
@@ -242,5 +246,10 @@ $("#trash").droppable({
   out: function(event, ui) {
     console.log("out");
   }
-})
+});
+
+$("#modalDueDate").datepicker({
+  // set the minimum date to be one day from the current date
+  minDate: 1
+});
 
