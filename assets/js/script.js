@@ -107,13 +107,16 @@ $(".list-group").on("click", "span", function() {
   $(this).replaceWith(dateInput);
 
   dateInput.datepicker({
-    minDate: 1
+    minDate: 1,
+    onClose: function() {
+      $(this).trigger("change");
+    }
   })
 
   dateInput.trigger("focus");
 });
 
-$(".list-group").on("blur", "input[type='text']", function() {
+$(".list-group").on("change", "input[type='text']", function() {
   var date = $(this)
     .val()
     .trim();
