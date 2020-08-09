@@ -197,16 +197,20 @@ $(".card .list-group").sortable({
   tolerance: "pointer",
   helper: "clone",
   activate: function(event) { 
-   
+   $(this).addClass("dropover");
+   $(".bottom-trash").addClass("bottom-trash-drag");
   },
   deactivate: function(event) {
-    
+    $(this).removeClass("dropover");
+    $(".bottom-trash").removeClass("bottom-trash-drag");
   },
   over: function(event) { 
-    
+    $(this).addClass("dropover-active");
+    $(".bottom-trash").addClass("bottom-trash-active")
   },
   out: function(event) {
-     
+     $(this).removeClass("dropover-active");
+     $(".bottom-trash").removeClass("bottom-trash-active")
   },
   update: function(event) { 
     var tempArr = [];
