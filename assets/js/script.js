@@ -266,8 +266,8 @@ function auditTask(taskEl) {
     .text()
     .trim();
 
-  // convert to moment object at 5:00pm
-  var time = moment(date, "L").set("hour", 17);
+  // convert to moment object at 6:00pm
+  var time = moment(date, "L").set("hour", 18);
 
   // remove any old classes from element 
   $(taskEl).removeClass("list-group-item-warning list-group-item-danger");
