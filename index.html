@@ -7,20 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Open+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Taskmaster Pro</title>
 </head>
 
 <body>
 
+  <!-- header -->
   <div class="row min-vh-100 no-gutters">
     <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
-      <h1 class="text-center">Taskmaster Pro Edition</h1>
-      <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add
-        Task</button>
+      <h1 class="text-center mb-4">Taskmaster Pro Edition</h1>
+      <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">
+        Add Task
+      </button>
       <button id="remove-tasks" class="btn btn-block btn-danger">Delete All Tasks</button>
-      <p class="mt-auto d-none d-lg-block text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa
-        excepturi aut non
+      <p class="mt-auto d-none d-lg-block">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa excepturi aut non
         laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
       </p>
     </header>
@@ -57,11 +61,10 @@
           </div>
         </div>
       </div>
-      <div id="trash" class="container mt-auto mb-1">
-        <h3 class="w-100 bg-danger p-3 text-center text-light">Drop Here to Remove</h3>
+      <div id="trash" class="container mt-auto mb-1 overflow-hidden">
+        <div class="bottom-trash w-100 p-3 text-center mb-2"><span class="oi oi-trash mr-2"></span>Drop Here to Remove</div>
       </div>
     </main>
-  </div>
 
   <!-- modal -->
   <div class="modal fade" id="task-form-modal" tabindex="-1" role="dialog" aria-labelledby="task-form-modal"
@@ -94,11 +97,12 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
